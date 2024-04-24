@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Sander Dijkstra</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <!--for development only. remove when done or not it doesn't do anything when you dont change the source files -->
+    <!-- <script src="updatejs.js"></script> -->
+</head>
+
+<body>
+    <nav> <!-- nav bar/header -->
+        <ul>
+            <li>
+                <a href="index.html" class="">Home</a>
+            </li>
+            <li>
+                <a href="over-mij.html">Over Mij</a>
+            </li>
+            <li>
+                <a href="projecten.html" class="">Mijn Projecten</a>
+            </li>
+            <li>
+                <a href="filmpje.html" class="">Filmpje</a>
+            </li>
+            <li>
+                <a href="interview.html" class="">Interview</a>
+            </li>
+            <li>
+                <a href="contact.html" class="active">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main><!-- main content -->
+        <h1 class="title">Contact</h1>
+        <div class="content" id="contact">
+            <form autocomplete="off">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="Voornaam">Voornaam: </label></td> <!-- i hate regex -->
+                            <td><input type="text" id="Voornaam" name="Voornaam" placeholder="Sander" class="form"
+                                    pattern="[A-Za-z \p{P}]{2,20}"></td>
+                            <!-- all roman small and captial letter, punctuation min 2 characters max 20 characters (try it out here https://regex101.com/r/7l9Rhw/3) -->
+                        </tr>
+                        <tr>
+                            <td><label for="Achternaam">Achternaam: </label></td>
+                            <td><input type="text" id="Achternaam" name="Achternaam" placeholder="Dijkstra" class="form"
+                                    pattern="[A-Za-z \p{P}]{2,20}" required></td>
+                            <!-- all roman small and captial letter, punctuation min 2 characters max 20 characters (try it out here https://regex101.com/r/7l9Rhw/3) -->
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email: </label></td>
+                            <td><input type="email" id="Email" name="Email" class="form" placeholder="foo@bar.com"
+                                    required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Bericht">bericht: </label></td>
+                            <td><textarea type="text" id="bericht" name="Bericht" placeholder="Bericht" class="form"
+                                    required></textarea></td>
+                            <!-- no regex input filtering without js D: if i use a <input type="text"> i cant use the enter key DDDD: -->
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" value="Verzenden">Verzenden</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <a href="talbe.html" class="idgaf">.</a>
+    </main>
+    <footer><!-- footer -->
+        <p><a href="privacy-policy.txt" target="_blank">privacy policy</a></p>
+        <!-- https://chat.openai.com/share/689a4fc1-9d8c-4d18-980d-b6b7ddfff207 -->
+        <p>email: <a
+                href="mailto:9016573@student.zadkine.nl?subject=&body=%0D%0A%0D%0AVia%20de%20website">9016573@student.zadkine.nl</a>
+        </p>
+    </footer>
+</body>
+
+</html>

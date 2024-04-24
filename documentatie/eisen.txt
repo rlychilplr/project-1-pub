@@ -1,0 +1,26 @@
+De website
+
+De website bevat in elk geval een home- pagina, en een pagina wie je bent. De overige pagina's zijn naar eigen idee verder in te vullen.
+De website maakt gebruik van de juiste HTML elementen, het <div> element wordt alleen gebruikt waar het niet anders kan
+Elke webpagina heeft precies één keer de elementen DOCTYPE, html, head en body
+De website is opgebouwd met HTML en CSS
+De opmaak van de website zit  in een CSS bestand. Er wordt geen gebruik gemaakt van het style-attribuut
+Elke student plaatst minimaal één afbeelding op zijn/haar eigen pagina
+Elke student plaatst minimaal één video op zijn/haar eigen pagina
+Elke student plaatst minimaal één formulier (Met minimaal 3 verschillende inputs) op zijn/haar eigen pagina
+Elke student plaatst minimaal één tabel (Met minimaal 3 rijen aan data).,
+Op de website zijn de volgende onderwerpen terug te vinden:
+
+Home pagina
+Een interview met een mede student: Waarom heeft je groepsgenoot van deze opleiding gekozen. Bedenk minimaal 5 vragen over dit onderwerp
+Achtergrond-informatie over jezelf. Je werkervaring, welke opleidingen je hebt gedaan
+Een pagina om je latere projecten in te plaatsen, gebruik placeholder plaatjes als inhoud
+En wat je zelf verder kwijt wilt wat relevant is over jou als student/softwaredeveloper
+Links naar eventuele "social-media" zoals github/linkedin
+Overige eisen:
+
+WireFrame
+Sitemap
+Planning
+Functionaliteiten conform MoSCoW
+Je code is gevalideerd

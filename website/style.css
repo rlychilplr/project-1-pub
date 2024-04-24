@@ -1,0 +1,311 @@
+/* global var declaration (this was unnessecairy) */
+:root {
+  --max-size-img: 400px;
+  --min-size-img: 200px;
+}
+
+html body {
+  background-color: #eaeaea;
+  /* zachter om naar te kijken dan puur wit */
+}
+
+
+/* end global var decration */
+
+/* set global font */
+@font-face {
+  font-family: CascaydiaCoveNerdFont;
+  src: url(fonts/CaskaydiaCoveNerdFont-Regular.ttf);
+  font-display: swap;
+  /* avoid showing invisible text while custom font is loading */
+}
+
+/* i would probably edit this to remove a lot of uncommon/unused characters if i had the time to */
+/* this is a monospace font which is nice
+  for its increased readability (and ascii art)*/
+* {
+  font-family: CascadiaCoveNerdFont;
+}
+
+/* nav bar */
+/* part source:
+https://www.w3schools.com/css/css_navbar_horizontal.asp#gsc.tab=0 */
+/*general nav*/
+nav ul li {
+
+  display: inline;
+  float: left;
+  background-color: #333;
+  margin: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 12px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* semi center the nav when changing window width*/
+@media only screen and (max-width: 1100px) {
+  nav {
+    margin-left: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  nav {
+    margin-left: 29vw;
+  }
+}
+
+/* separator line */
+nav ul li {
+  border-right: 1px solid #bbb;
+  transition: 0.3s;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+/* on hover change color */
+nav ul li a:hover {
+  background-color: #171717;
+  transition: 0.3s;
+}
+
+/* active nav dir */
+.active {
+  background-color: #04AA6D;
+}
+
+/* end nav bar */
+/* main */
+/* global link color but not nav */
+a {
+  color: #038d5b;
+}
+
+/* title of page */
+.title {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+  top: 9vh;
+  left: calc(50vw - 200px);
+  font-weight: bold;
+  /* border: solid 1px black; */
+}
+
+/* big image on home page */
+#main-img {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  #main-img {
+    width: var(--min-size-img);
+    margin-top: calc(var(--min-size-img) /2 - 310px);
+    margin-left: calc(var(--min-size-img) / 2 - 150px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #main-img {
+    width: var(--max-size-img);
+    margin-top: calc(var(--max-size-img) /2 - 380px);
+    margin-left: calc(var(--max-size-img) / 2 - var(--max-size-img));
+  }
+}
+
+/* adding a min/max height at the end of the @media lines
+breaks the entire thing even though it works in a w3schools test panel
+so im just not going to bother */
+
+/* text content of almost all pages in center of page */
+.content {
+  top: 21vh;
+  left: calc(50% - 400px);
+  position: absolute;
+  width: 820px;
+  /* border: solid 1px black; */
+  height: 480px;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* hides bottom scroll bar */
+  padding-bottom: 20px;
+  /* makes scroll slightly more lenient with the text at the bottom */
+}
+
+/* dashed ul src: 
+https://www.w3docs.com/tools/code-editor/11536 */
+ul {
+  margin: 0;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+/* Selects all <li> elements where the parent is a <ul class="dashed"> element,
+I assume this is a correct way since i got this from w3docs.com and w3schools also sais it is fine*/
+ul.dashed>li {
+  text-indent: -20px;
+}
+
+ul.dashed>li:before {
+  content: "-";
+  text-indent: -20px;
+}
+
+/* scrollbar styling */
+/* stolen and modified from:
+https://codepen.io/devstreak/pen/dMYgeO (its style-10)
+t̶h̶o̶u̶g̶h̶ ̶i̶t̶ ̶d̶o̶e̶s̶n̶'̶t̶ ̶w̶o̶r̶k̶ ̶o̶n̶ ̶f̶i̶r̶e̶f̶o̶x̶ ̶b̶a̶s̶e̶d̶ ̶b̶r̶o̶w̶s̶e̶r̶s̶ it appears to work now though it still doesn't look the same as chromium
+
+since the majority use blink/webkit based browsers i think its fine
+(https://gs.statcounter.com/browser-market-share#monthly-202209-202310)
+only firefox (and forks) use a different renderer which is roughly of users 3%*/
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #AAA;
+  border-radius: 10px;
+}
+
+#gamen:target {
+  background-color: yellow;
+}
+
+#github {
+  position: absolute;
+  left: 50vw;
+}
+
+/* projecten placeholder plaatjes */
+#placeholder-czkawka {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  top: 25vh;
+  left: 3vw;
+}
+
+#placeholder-ytdlp {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  top: 40vh;
+  right: 3vw;
+}
+
+#disclaimer-projecten {
+  position: absolute;
+  bottom: 15vh;
+  text-align: center;
+  left: calc(50vw - 270px);
+  font-size: 15px;
+}
+
+/* contact */
+#contact {
+  overflow: hidden;
+  width: 500px;
+  left: calc(50vw - 250px);
+  top: 25vh;
+  height: 300px;
+}
+
+.form {
+  width: 300px;
+  margin: 2px 0 2px 2px;
+}
+
+#bericht {
+  height: 175px;
+}
+
+.idgaf {
+  position: absolute;
+  top: 1vh;
+  left: 99vw;
+}
+
+/* filmpje */
+.video-placement {
+  position: absolute;
+  top: 17vh;
+  left: calc(50vw - 450px);
+}
+
+.bottom-text-video {
+  position: absolute;
+  top: 82vh;
+  left: calc(50vw - 300px);
+}
+
+
+/* table */
+#no-scroll {
+  overflow: hidden;
+}
+
+.talbe {
+  position: absolute;
+  left: 20vw;
+}
+
+.talbe tr,
+.talbe td {
+  border: solid 1px black;
+}
+
+#easteregg {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  transition: 0.5s;
+  transition-timing-function: linear;
+
+}
+
+#easteregg:hover {
+  width: 380px;
+  height: 380px;
+  transition: 0.5s;
+  transition-timing-function: linear;
+}
+
+/* end main */
+
+/* footer */
+footer {
+  position: absolute;
+  width: 99vw;
+  bottom: 0;
+  text-align: center;
+  text-size-adjust: 8px;
+  /* remove later */
+  /* border: solid 1px black; */
+}
+
+/* end footer */
