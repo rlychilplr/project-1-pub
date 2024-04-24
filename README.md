@@ -2,7 +2,7 @@
 
 # IMPORTANT
 
-## the images of me, Sander Dijkstra, (that is [this](website/img/sander-small.png) image) is not to be used by anybody under any circumstances without prior consent given by me!!!
+## the images of me, Sander Dijkstra, (that is [this](website/img/sander-small.png) image and the ones included in the .zip file) is not to be used by anybody under any circumstances without prior consent given by me!!!
 
 ---
 
