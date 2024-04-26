@@ -6,6 +6,8 @@
 
 ---
 
+for this project i got a 8,5/10
+
 started on 4 september 2023 and to be turned in on 3 november 2023
 
 This is my first project, you can find the requirements in dutch [**here**](documentatie/eisen.txt) or the translation to english i made [**here**](documentatie/requirements.md)
