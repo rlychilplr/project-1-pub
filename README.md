@@ -6,7 +6,7 @@
 
 ---
 
-for this project i got a 8,5/10
+for this project i got a 8.5/10
 
 started on 4 september 2023 and to be turned in on 3 november 2023
 
